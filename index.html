@@ -1,10 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Emporium</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Emporium.</title>
 </head>
-<body>
-    <script src="./public/js/main.js"></script>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="d-flex flex-column align-items-center bg-white">
+    <!-- Début NavBar -->
+    <div>
+      <h1 class="text-center py-3 pt-5 fw-bold text-dark">
+        Emporium.
+      </h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light maNav">
+      <div class="ms-5 mynav container-fluid d-flex justify-content-between">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <a class="nav-link text-dark" href="#">HOME</a>
+            <a class="nav-link text-dark" href="#">PRODUCT </a>
+            <a class="nav-link text-dark" href="#">BLOG</a>
+            <a class="nav-link text-dark" href="#">ELEMENTS</a>
+            <a class="nav-link text-dark" href="#">ABOUT</a>
+            <a class="nav-link text-dark" href="#">CONTACT</a>
+            <a class="nav-link text-dark">
+              <button type="button" id="btnJour" class="btn btn-outline-dark jour"></button>
+              <button type="button" id="btnNuit" class="btn btn-outline-dark bg-black nuit"></button>
+              <button type="button" class="cnx" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                CONNEXION
+              </button>
+
+              <!-- Login -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="inscrit modal-title text-center w-50" id="exampleModalLabel">SignUp</h5>
+                      <h5 class="enregistre modal-title text-center w-50" id="exampleModalLabel">Register</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex">
+                      <div class="w-50 d-flex flex-column  gauche">
+                        <input class="my-2 w-50" type="text" placeholder="Email Adress">
+                        <input class="my-2 w-50" type="text" placeholder="Password">
+                        <button class="btn-info text-white my-2 w-50">Sign up</button>
+                        <div class="d-flex flex-column w-100">
+                          <button class="btn-danger  w-75 my-2 ms-3 nezDeAdil">Connect with Google</button>
+                          <button class="btn-primary w-75 my-2 ms-3  nezDeAdil">Connect with Facebook</button>
+                        </div>
+                      </div>
+                      <div class="w-50 d-flex flex-column hide-content droite">
+                        <div class="d-flex ">
+                          <input class="my-2 w-50" type="text" placeholder="First name">
+                          <input class="my-2 w-50 ms-2" type="text" placeholder="name"></div>
+                        <input class="my-2 w-100" type="text" placeholder="Email Adress">
+                        <div class="d-flex">
+                          <input class="my-2 w-50" type="text" placeholder="Confirm password">
+                          <input class="my-2 w-50 ms-2" type="text" placeholder="Password">
+                        </div>
+                        <button class="btn-info text-white w-100">Register</button>
+                      </div>
+                      <!-- ./Login -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="cmonterrein"></div>
+    <!-- ./NavBar -->
+  </header>
+  <!-- ./Header -->
+  <!-- Section Main-->
+  <main>
+    <section class="container-fluid sect1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container m-lg-5 my-media">
+              <span id="ban-empo" class="text-danger">
+                Shop at
+              </span>
+              <p class="" id="ban-empo1">emporium.</p>
+              <p class="text-secondary">A wonderful serenity has taken possession of my entire soul, like
+                these sweet mornings of spring which i enjoy with my.</p>
+              <button type="button" class="btn btn-danger monBtnSale"><span id="monSale">SALE
+                  ITEMS</span></button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="/public/img/slider-1.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Items -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="image1 tacos">
+            <h3 class="border-bottom border-2 w-75 text-center text-white">Living Room</h3>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="image2 tacos">
+            <h3 class="border-bottom border-2 w-75 text-center text-white">Sale Items</h3>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="image3 tacos">
+            <h3 class=" border-bottom border-2 w-75 text-center text-white">Clothes</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="produits">
+      <div class="container">
+        <h2 class="text-center mt-5 mb-5 fw-bold">Recent Products</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Luxury sofa</h6>
+            <p class="text-danger text-center fw-bold">$600.00</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-gloves.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                style="height: 70px; width: 70px;">SALE!</button>
+              <div class="ms-4">
+                <p class="fw-bold text-center mt-4 d-block text-dark">Leather Gloves</p>
+                <span class="text-center text-danger fw-bold "> <del class="text-secondary">$34.00</del>
+                  $27.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-cups.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Colorful Bowl</h6>
+            <p class="text-danger text-center fw-bold">$18.00</p>
+          </div>
+        </div>
+        <!-- 2 eme row -->
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-bag.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                style="height: 70px; width: 70px;">SALE!</button>
+              <div class="ms-4">
+                <p class="fw-bold text-center mt-4 d-block text-dark">Women Bag</p>
+                <span class="text-center text-danger fw-bold "> <del class="text-secondary">$420.00 </del>350.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-tshitr.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Minimal T-shirt</h6>
+            <p class="text-danger text-center fw-bold">$15.00</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-plates.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Plates Set</h6>
+            <p class="text-danger text-center fw-bold">$30.00</p>
+          </div>
+        </div>
+        <!-- 3 eme row -->
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Modern Sofa</h6>
+            <p class="text-danger text-center fw-bold">$900.00</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-bed.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Bed Linen</h6>
+            <p class="text-danger text-center fw-bold">$790.00</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="avant apres">
+              <img src="/public/img/products_mini/product-shoes.jpg" class="img-fluid my-images" alt="">
+            </div>
+            <h6 class="text-center fw-bold mt-4 text-dark">Luxury sofa</h6>
+            <p class="text-danger text-center fw-bold">$600.00</p>
+          </div>
+        </div>
+        <!-- ./3eme row -->
+      </div>
+    </section>
+    <!-- ./Items -->
+  <!-- Début du Scripts -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script type="module" src="./public/js/app.js"></script>
+  <!-- Fin du Scripts -->
 </body>
+
 </html>
